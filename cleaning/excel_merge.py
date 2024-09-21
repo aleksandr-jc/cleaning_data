@@ -6,7 +6,7 @@ import os
 """
 
 # вкажіть шлях до папки з файлами Excel
-folder_path = 'data/all_data'
+folder_path = 'data/yakaboo/xlsx'
 
 # Створюємо список для збереження всіх DataFrame
 all_data = []
@@ -22,6 +22,6 @@ for file in os.listdir(folder_path):
 combined_df = pd.concat(all_data, ignore_index=True)
 
 # Зберігаємо обʼєднаний DataFrame в новий Excel файл
-combined_df.to_excel('data/cleaning_data/all_data.xlsx', index=False)
+combined_df.to_excel('data/cleaning_data/book_data.xlsx', index=False)
 
 print('Файли успішно обʼєднані!')
